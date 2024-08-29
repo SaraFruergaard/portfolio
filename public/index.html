@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7b6f6f7479.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <section class = "section">
+        <div class="container">
+            <nav>
+             <h1 style="font-size:70px;" id="name"><span>S</span>ARA</h1>
+                 <ul id="sidemenu">
+                      <li><a href='#header'> Home</a></li>
+                     <li><a href='#about'> About</a></li>
+                      <li><a href='#portfolio'> Portfolio</a></li>
+                     <li><a href='#contact'> Contact</a></li>
+                     <i class="fas fa-times" onclick="closemenu()"></i>
+                  </ul>
+                  <i class="fas fa-bars" onclick="openmenu()"></i>
+             </nav>
+             <div class="header-text">
+                 <p>XR Developer</p>
+                 <h2>Hi, I'm <span>Sara</span><br> Fruergaard from Sweden</h2>
+             </div>
+         </div>
+    </section>
+</div>
+<!----------------about----------------->
+<div id="about">
+    <div class="container">
+        <div class='row'>
+          <div class="about-col-1">
+            <img class = "image2" src="https://lh3.google.com/u/0/d/1L_r4IypXWp9S6lz3QuxaabO8HdXSw3Ca">
+          </div>
+          <div class="about-col-2">
+            <h1 class= "sub-title">About Me</h1>
+            <p>I'm currently in the middel of my XR Creative Developer education at Hyper Island in Stockholm. 
+            I've always got told that I am a very curius person, witch helps me a lot in my learning jurney. 
+            I love to learn new things and am not afraid of asking questins. 
+            Relation ships are important for me, both in personal matters and in professinol matters. 
+            And that is a skill I defenetly have been sharpening at Hyper Island (apart from XR learning).</p>
+            
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>Augmented Reality</span><br>Previos work in Effect House and Meta Spark</br></li>
+                    <li><span>Virtual Reality</span><br>Developing in Unity</br></li>
+                    <li><span>3D Artist</span><br>Skills in Maya and Blender, also substaintal painter</br></li>
+                    <li><span>Coding Languages</span><br>HTML, CSS, C#, Flutter</br></li>
+                    <li><span>Team Rolles</span><br>Scrum Master, Project Manager </br></li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>2023-ongoing</span><br>XR Creative developing at Hyper Island</br></li>
+                    <li><span>2019-2022</span><br>High School Degree at ESS Gymnasiet</br></li>
+                </ul>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+
+<!--------------portfolio---------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class= "sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="https://lh3.google.com/u/0/d/1_XE4A7HjuVf3yN9ooqv_fxePhDXFf9oH">
+                <div class="layer">
+                    <h3>SF Studio</h3>
+                    <p>Two diffrent AR fillters located on Effect House to raise awearness for a uppcoming movie.</p>
+                    <a href="./pages/sfstudios.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="https://lh3.google.com/u/0/d/1S9cBtye6k7hX3mkNOuOfTjZbcSQPLKLY">
+                <div class="layer">
+                    <h3>The Bright Green Summit</h3>
+                    <p>An VR experience and dynamic 3D branding used in a panel discussion.</p>
+                    <a href="./pages/project2.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div> 
+            <div class="work">
+                <img src="https://lh3.google.com/u/0/d/1AgoAaO67mhe3pKkEPzjUXmvwYPShH4gu">
+                <div class="layer">
+                    <h3>The Madonna Project</h3>
+                    <p>Planning and prototyping for an immersive experience used to highlight Madonnas contribuations over the decades.</p>
+                    <a href="./pages/madonna.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work hidden">
+                <img src="https://lh3.google.com/u/0/d/1mn7g9cA29jZLuwykOgFhDvVXIo3s4mV1">
+                <div class="layer">
+                    <h3>Magical Mushrooms</h3>
+                    <p>Made in Blender</p>
+                </div>
+            </div>
+            <div class="work hidden">
+                <img src= "https://lh3.google.com/u/0/d/1UPE3LdPQovCWBH91Qax6ILZ-kuXfM2Yi">
+                <div class="layer">
+                    <h3>Retro Chair</h3>
+                    <p>Made in Blender</p>
+                </div>
+            </div> 
+            <div class="work hidden">
+                <img src="https://lh3.google.com/u/0/d/1gIoCLHu8u1wb2br4jGu0Hv5pJFC_5jw0">
+                <div class="layer">
+                    <h3>Simpel room</h3>
+                    <p>Made in Maya</p>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn" id = "show-more-btn">See more</a>
+    </div>
+</div>
+<!---------------contact--------------->
+<div id="contact">
+    <div class="container-contact">
+        <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>sarafruergaard@gmail.com</p>
+            <p><i class="fa-solid fa-square-phone"></i>+46763235277</p>
+            <a href="images/Resume copy.pdf" download class="btn btn2">Download CV</a>
+        </div>
+      
+    </div>
+    <div class="copyright">
+        <p></p>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+    document.getElementById('show-more-btn').addEventListener('click', function(e) {
+        e.preventDefault();
+        var hiddenWorks = document.querySelectorAll('.work.hidden');
+
+        hiddenWorks.forEach(function(work) {
+            work.classList.remove('hidden');
+        });
+
+        this.innerHTML = "Hide"
+
+    });
+        
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu")
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzVaVaZj7CjzRcAUl9cd4L6qyCqc5pSsgs7U5oCAeWxU88BWrQbHYI1z5ITkzXunTT8/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>

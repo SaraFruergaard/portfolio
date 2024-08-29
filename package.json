@@ -1,0 +1,25 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SaraFruergaard/portfolio.git"
+  },
+  "author": "Sara",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SaraFruergaard/portfolio/issues"
+  },
+  "homepage": "https://github.com/SaraFruergaard/portfolio#readme",
+  "dependencies": {
+    "@netlify/functions": "^2.8.1",
+    "@types/express": "^4.17.21",
+    "express": "^4.19.2",
+    "serverless-http": "^3.2.0"
+  }
+}
